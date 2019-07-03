@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <span class="openbtn" onclick="open_btn()">
+            <a href="#">
+                📜
+            </a>
+        </span>
+
+        <ul class="navbar-nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="wrapper">
+    <nav id="sideMenu">
+        <span class="closebtn" onclick="close_btn()">
+            <a href="#">✂️</a>
+        </span>
+            <ul class="sidebar-nav">
+                <li><a href="#">Home S</a></li>
+                <li><a href="#">About S</a></li>
+                <li><a href="#">Services S</a></li>
+                <li><a href="#">Contact S</a></li>
+            </ul>
+       
+    </nav>
+
+    <div id="main">
+        <h1>Responsive Slide Menu</h1>
+    </div>
+</div>
+    <script>
+    function open_btn() {
+        // document.getElementById("main").style.marginLeft="250px";
+        document.getElementById("sideMenu").style.width="250px";
+
+    }
+    function close_btn() {
+        document.getElementById("main").style.marginLeft="0px";
+        document.getElementById("sideMenu").style.width="0px";
+
+    }
+    
+    </script>
+</body>
+</html>
